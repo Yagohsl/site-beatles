@@ -1,15 +1,16 @@
 
 .grid-container {
     height: 100%;
-  
+    
     display:grid;
     
     grid-template-areas: 
-    "cabecalho navegacao"
+    "cabecalho cabecalho"
     "lateral conteudo"
     "rodape rodape";
- }
- html, body{
+}
+html, body{
+     width: 100%;
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -71,7 +72,27 @@
  .header {
     background-color: rgb(29, 27, 27);
     grid-area: cabecalho;
+    background-image:url(../imagens/Abbey-Road-.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 66%;
+    margin-bottom: 10%;
+    height: 70%;
+    
  }
+ .title{
+    color: #ffff;
+    margin-top: 10%;
+
+ }
+ .main-title{
+    height: 100%;
+            margin: 0;
+            display: grid;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: flex-end;   /* Alinha na parte inferior */
+ }
+
  .nav{
      grid-area: navegacao;
      background-color: rgb(29, 27, 27);
@@ -138,10 +159,11 @@
          font-size:40px;
          justify-content: center;
          align-items:flex;
+         font-family: Arial, Helvetica, sans-serif;
          display: flex-start ;
      }
      
-     h2, h3, h4{
+     .title-box-shadow{
          font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
         box-shadow: 5px 5px 5px darkgrey;
