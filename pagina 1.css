@@ -1,0 +1,288 @@
+
+.grid-container {
+    height: 100%;
+    
+    display:grid;
+    
+    grid-template-areas: 
+    "cabecalho cabecalho"
+    "lateral conteudo"
+    "rodape rodape";
+}
+html, body{
+     width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+   
+ }
+ li{
+     list-style:none;
+     color:black;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     flex-direction: column ;
+     
+ }
+ a {
+    text-decoration: none;
+ }
+ 
+ .aside  {
+    grid-area: lateral;
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height:1.5;
+    text-align: justify;
+     
+    
+}
+.side-menu {
+    margin: 5px;
+    padding: 0px;
+   
+}
+
+
+
+.iframe{
+    border: none;
+    width: 100%;
+    height: 500px;
+    
+}
+
+
+.iframe li {
+    background: transparent;
+    border: none;
+    
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ .header {
+    background-color: rgb(29, 27, 27);
+    grid-area: cabecalho;
+    background-image:url(../imagens/Abbey-Road-.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 66%;
+    margin-bottom: 10%;
+    height: 70%;
+    
+ }
+ .title{
+    color: #ffff;
+    margin-top: 10%;
+
+ }
+ .main-title{
+    height: 100%;
+            margin: 0;
+            display: grid;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: flex-end;   /* Alinha na parte inferior */
+ }
+
+ .nav{
+     grid-area: navegacao;
+     background-color: rgb(29, 27, 27);
+ }
+ .nav {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ }
+ .header {
+    font-family: serif;
+    color: white;
+     display: flex-start ;
+     justify-content:center;
+     align-items: center;
+     padding: 0 20px 60px 20px;
+     padding-top: 80px;
+
+    }
+    #imgcabecalho{
+        width: 100;
+        height: 100;
+    }
+    .content {
+        width: 80%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content:center;
+    padding: 0 20px 20px 20px;
+        grid-area: conteudo;
+        text-align: justify;
+    }
+    .footer {
+        width: 97%;
+        height: 40px;
+        grid-area: rodape;
+        text-align: justify;
+        background-color: rgb(29, 27, 27);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color:rgb(136, 128, 128);
+        font-family:serif
+    }
+   
+   
+    
+    p{
+       
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+        padding: 0 20px 20px 20px;
+        display:flex;
+        align-items: flex;
+        justify-content: flex;
+        line-height: 2;
+    letter-spacing: 1px;
+
+      
+     }
+     h1{
+         font-size:40px;
+         justify-content: center;
+         align-items:flex;
+         font-family: Arial, Helvetica, sans-serif;
+         display: flex-start ;
+     }
+     
+     .title-box-shadow{
+         font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 5px 5px 5px darkgrey;
+     }
+
+     ol{
+         font-family: Arial, Helvetica, sans-serif;
+         line-height: 1.5;
+         letter-spacing: 1px;
+        list-style-type:disc;
+        justify-content: flex-start;
+        
+        
+     }
+     .albuns1{
+         padding: 5px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+     }
+     .musicas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+       }
+      
+
+     @media (max-width: 660px) {
+
+        .grid-container {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: 50px 80px ;
+            grid-template-areas: 
+            "cabecalho"
+            "conteudo"
+            
+            
+            
+        }
+        .footer {
+            display: none;
+        }
+        .nav{
+            display: none;
+        }
+        
+        .aside {
+                grid-area: lateral;
+                display: flex;
+                flex-direction:column;
+                height: 500px;
+                width: 99%;
+                padding-top: 4fr;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                line-height:1.5;
+                text-align: justify;
+                 
+                
+            
+        }
+
+      
+        .hide-side-menu{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding:0px;
+            margin: 0px;
+            margin-bottom: 10px;
+            
+        }
+    
+
+        .header {
+            font-family: serif;
+            color: white;
+             display: flex-start ;
+             justify-content:center;
+             align-items: center;
+             padding: 0 20px 60px 20px;
+             padding-top: 80px;
+             height: 240px;
+        
+            }
+    
+      
+        .content {
+            width: 80%;
+        margin: 10px auto;
+        align-items: center;
+        justify-content:center;
+        padding: 300px 0px 0px 0px;
+            grid-area: conteudo;
+            text-align: justify;
+        }
+        .side-menu {
+            margin: 5px;
+            padding: 0px;
+        
+        }
+        
+        .iframe {
+            display: flex;
+            border:none;
+            height: 500px;
+            width: 90%;
+            padding: 0px 0px 200px 0px;
+            
+        }
+        .musicas{
+            display: center;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+           }
+    }
+     
